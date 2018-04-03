@@ -26,7 +26,7 @@ http.createServer(function (req, res) {
         res.end(`Error getting the file: ${err}.`);
       } else {
         // if the file is found, set Content-type and send data
-        res.setHeader('Content-type', 'application/json' );
+        res.setHeader("Content-Type", "application/json; charset=utf-8");
         res.end(data);
       }
     });
